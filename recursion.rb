@@ -58,8 +58,7 @@ end
 # Fn = Fn-1 + Fn-2
 
 def fibonacci(num)
-  return 0 if num == 0
-  return 1 if num == 1
+  return num if (0..1).include? num
   fibonacci(num-1) + fibonacci(num-2)
 end
 
@@ -79,6 +78,18 @@ def bunnyEars2(num)
   return 0 if num == 0
   num % 2 == 0 ? 3 + bunnyEars2(num-1) : 2 + bunnyEars2(num-1)
 end
+
+
+
+# We have triangle made of blocks. The topmost row has 1 block,
+# the next row down has 2 blocks, the next row has 3 blocks,
+# and so on. Compute recursively (no loops or multiplication)
+# the total number of blocks in such a triangle with the given
+# number of rows.
+
+# triangle(0) → 0
+# triangle(1) → 1
+# triangle(2) → 3
 
 
 
