@@ -136,3 +136,29 @@ end
 # count8(818) → 2
 # count8(8818) → 4
 
+
+
+
+
+# Given base and n that are both 1 or more, compute recursively
+# (no loops) the value of base to the n power, so powerN(3, 2)
+# is 9 (3 squared).
+
+# powerN(3, 1) → 3
+# powerN(3, 2) → 9
+# powerN(3, 3) → 27
+
+
+
+
+
+# Given a string, compute recursively (no loops) the number
+# of lowercase 'x' chars in the string.
+
+# countX("xxhixx") → 4
+# countX("xhixhix") → 3
+# countX("hi") → 0
+
+
+
+
