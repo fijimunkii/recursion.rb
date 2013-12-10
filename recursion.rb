@@ -370,3 +370,35 @@ end
 # nestParen("(())") → true
 # nestParen("((()))") → true
 # nestParen("(((x))") → false
+
+
+
+
+
+# Given a string and a non-empty substring sub, compute
+# recursively the number of times that sub appears in the
+# string, without the sub strings overlapping.
+
+# strCount("catcowcat", "cat") → 2
+# strCount("catcowcat", "cow") → 1
+# strCount("catcowcat", "dog") → 0
+
+
+
+
+
+
+# Given a string and a non-empty substring sub, compute
+# recursively if at least n copies of sub appear in the
+# string somewhere, possibly with overlapping. N will be
+# non-negative.
+
+# strCopies("catcowcat", "cat", 2) → true
+# strCopies("catcowcat", "cow", 2) → false
+# strCopies("catcowcat", "cow", 1) → true
+
+
+
+
+
+
