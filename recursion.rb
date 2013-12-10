@@ -152,12 +152,26 @@ end
 
 
 
+
 # Given a string, compute recursively (no loops) the number
 # of lowercase 'x' chars in the string.
 
 # countX("xxhixx") → 4
 # countX("xhixhix") → 3
 # countX("hi") → 0
+
+
+
+
+
+
+# Given a string, compute recursively (no loops) the number
+# of times lowercase "hi" appears in the string.
+
+# countHi("xxhixx") → 1
+# countHi("xhixhix") → 2
+# countHi("hi") → 1
+
 
 
 
