@@ -1,8 +1,3 @@
-def sum(num)
-  return num if
-  num + sum(num-1)
-end
-
 # Given n of 1 or more, return the factorial of n, which is
 # n * (n-1) * (n-2) ... 1. Compute the result recursively
 # (without loops).
@@ -17,9 +12,13 @@ end
 # (towards the base case). Assume the recursive call returns
 # a correct value, and fix that value up to make our result.
 
+# def factorial(num)
+#   return num if num == 1
+#   num * factorial(num - 1)
+# end
+
 def factorial(num)
-  return num if num == 1
-  num * factorial(num - 1)
+  (1..self).reduce(:*) || 1
 end
 
 
