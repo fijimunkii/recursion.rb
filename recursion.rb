@@ -66,7 +66,7 @@ end
 def fib_with_index(num)
   return num if (0..1).include? num
   return @fibarray[num] if @fibarray[num]
-  @fibarray[num] = fibonacci(num-1) + fibonacci(num-2)
+  @fibarray[num] = fib_with_index(num-1) + fib_with_index(num-2)
 end
 
 
