@@ -61,6 +61,14 @@ def fibonacci(num)
   fibonacci(num-1) + fibonacci(num-2)
 end
 
+@fibarray = [0,1]
+
+def fib_with_index(num)
+  return num if (0..1).include? num
+  return @fibarray[num] if @fibarray[num]
+  @fibarray[num] = fibonacci(num-1) + fibonacci(num-2)
+end
+
 
 # We have bunnies standing in a line, numbered 1, 2, ...
 # The odd bunnies (1, 3, ..) have the normal 2 ears.
